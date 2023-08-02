@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravind portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/319d21f5d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Studies">Studies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi,I'm <span>Aravind</span></h1>
+            </div>
+        </div>
+         </div>
+
+         <!-- -------------------about-------------------- -->
+    <div id="about">
+        <div class="container1">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                 </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p>This section contains about my education details and skills aquired by me.
+                        </p>
+                        <section id="resume" class="resume">
+                        <div class="container1" data-aos="fade-up">
+                            <div class="row" style="display: flex;">
+                            <div class="col-lg-6">
+                                <h3 class="resume-title">Education</h3>
+                                <div class="resume-item">
+                                <h4>Bachelor of Technology (Computer Science Engineering - Data Science)</h4>
+                                <h5>2020 - Present</h5>
+                                <p><em>Dadi Institute of Engineering and Technology, Anakapalle.</em></p>
+                                </div>
+                                <div class="resume-item">
+                                <h4>Diploma (ECE) - 74%</h4>
+                                <h5>2017 - 2020</h5>
+                                <p><em>Dadi Institute of Engineering and Technology, Anakapalle.</em></p>
+                                </div>
+                                <div class="resume-item">
+                                <h4>10th - 9.2 CGPA</h4>
+                                <h5>2017</h5>
+                                <p><em>Z. P. H School, Laxmipuram.</em></p>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                        </section>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>PYTHON</span><br></li>
+                                <li><span>C LANGUAGE</span><br></li>
+                                <li><span>HTML</span><br></li>
+                                <li><span>CSS</span><br></li>
+                            </ul>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div> 
+    <!-- -----------------------studies----------------------- -->
+    <div id="Studies">
+        <div class= "container">
+            <h1 class="sub-title">My Studies</h1>
+            <div class="studies-list">
+                <div>
+                    <i class="fa-solid fa-laptop-file"></i>
+                    <h2>Education</h2>
+                    <p>Apart from salesmen and consumers, distributors or outside experts. </p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-diploma"></i>
+                    <h2>Certifications</h2>
+                    <p>Apart from salesmen and consumers, distributors or outside experts. </p>
+                        <a href="#">learn more</a>
+                </div>
+                 <div>
+                    <i class="fa-regular fa-hand"></i>
+                    <h2>Hobbies</h2>
+                    <p>Apart from salesmen and consumers, distributors or outside experts. </p>
+                        <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------contact-------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left"> 
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>aravindkanithi@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9012345678</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="instagram.com/"><i class="fa-brands fa-instagram"></i></a> 
+                        <a href="telegram.om/"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+                    <div class="contact-right"></div>
+                    <form>
+                        <input type="text"name="Name" placeholder="Your Name" required>
+                         <input type="email"name="email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="4" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright  @ Aravind.Made with <i class="fa-sharp fa-solid fa-heart"></i> </p>
+
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab ('tabname'){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById('tabname').classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
